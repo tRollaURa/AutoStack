@@ -1,3 +1,3 @@
-# AutoStack\n
+# AutoStack
 Paper Plugin.
 Fuck u zmgpal
