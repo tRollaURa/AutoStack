@@ -1,0 +1,8 @@
+name: AutoStack
+version: '${project.version}'
+main: cn.trollaura.autostack.AutoStack
+authors: [ tRollaURa_ ]
+description: AutoStack.
+commands:
+  dd:
+    description: main commands.
