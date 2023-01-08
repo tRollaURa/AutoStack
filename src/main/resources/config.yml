@@ -1,2 +1,11 @@
-# Set amounts when u use maincommands.(/dd)
+# Set amounts when u use autostack.(/dd)
 Amounts: 64
+# Permission ALL!
+EveryoneHasPermission: false
+# Notify Settings.
+Notify: true
+# Defensive measures >>
+AntiOnMainHandStackTotem: true
+FixStackItemsPickUp: true
+AntiDropStackItems: true
+AntiDefaultPlayerOnMainHand: true

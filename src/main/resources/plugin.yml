@@ -5,4 +5,7 @@ authors: [ tRollaURa_ ]
 description: AutoStack.
 commands:
   dd:
+    description: autostack.
+  autostack:
     description: main commands.
+    aliases: as
