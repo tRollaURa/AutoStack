@@ -1,21 +1,22 @@
 package cn.trollaura.autostack;
 
-import org.bukkit.event.EventHandler;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.util.concurrent.Delayed;
 
 public final class AutoStack extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        System.out.println("[AutoStack] Loading... by tRollaURa_");
+        Bukkit.getLogger().info(Utils.color("&6[AutoStack] &aLoading... by tRollaURa_"));
+        Bukkit.getLogger().info(Utils.color("&6[AutoStack] &aNow Version: 1.1"));
         getCommand("dd").setExecutor(new Listener());
+        getCommand("autostack").setExecutor(new MainCommand());
+        getServer().getPluginManager().registerEvents(new Listener(),this);
         saveDefaultConfig();
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        Bukkit.getLogger().info(Utils.color("&6[AutoStack] &aDisabling... by tRollaURa_"));
     }
 }
